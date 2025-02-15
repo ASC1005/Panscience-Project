@@ -33,7 +33,7 @@ Configure the environment variables according to `.envDemo`, then run:
 
 ### User Endpoints
 
-- **Create User**\
+- **Create User (Admin only)**\
   **POST** `http://localhost:8000/api/v1/user/create`\
   **Body Parameters:**
 
@@ -62,10 +62,10 @@ Configure the environment variables according to `.envDemo`, then run:
 - **Get User Profile**\
   **GET** `http://localhost:8000/api/v1/user/profile`
 
-- **Get User by ID**\
+- **Get User by ID (Admin only)**\
   **GET** `http://localhost:8000/api/v1/user/get/{userId}`
 
-- **Update User**\
+- **Update User (Admin only)**\
   **PUT** `http://localhost:8000/api/v1/user/update/{userId}`\
   **Body Parameters:**
 
@@ -75,7 +75,7 @@ Configure the environment variables according to `.envDemo`, then run:
   }
   ```
 
-- **Delete User**\
+- **Delete User (Admin only)**\
   **DELETE** `http://localhost:8000/api/v1/user/delete/{userId}`
 
 ### Task Endpoints
