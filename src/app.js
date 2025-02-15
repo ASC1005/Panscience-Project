@@ -25,5 +25,8 @@ app.use("/isHealthy", (req, res) => {
 import userRouter from "./routes/user.route.js"
 app.use("/api/v1/user", userRouter)
 
+import taskRouter from "./routes/task.route.js"
+app.use("/api/v1/task", taskRouter)
+
 
 export { app }
