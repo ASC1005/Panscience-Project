@@ -2,6 +2,13 @@
 
 This project provides endpoints for a user to register and perform CRUD operations on tasks.
 
+The deployed API can be pinged at
+
+https://panscience-api.onrender.com/isHealthy
+
+(Please wait for a around 2 minutes after visiting the above URL as the server goes offline when inactive and will take some time to spin back up)
+
+
 ## Deployment
 
 To deploy this project, run:
