@@ -51,7 +51,6 @@ userSchema.methods.generateAccessToken = function(){
     return jwt.sign(
         {
             _id: this._id,
-            number: this.number,
             fullName: this.fullName,
             role: this.role
         },
@@ -65,7 +64,6 @@ userSchema.methods.generateRefreshToken = function(){
     return jwt.sign(
         {
             _id: this._id,
-            number: this.number,
             fullName: this.fullName,
             role: this.role
             
