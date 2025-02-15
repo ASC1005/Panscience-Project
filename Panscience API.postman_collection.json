@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "4e359eed-21ef-4ee6-ad07-fd9b3b489395",
+		"name": "Panscience API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28309338",
+		"_collection_link": "https://grey-spaceship-381861.postman.co/workspace/New-Team-Workspace~1b39da11-7066-4f51-9bdc-64e5794aff73/collection/28309338-4e359eed-21ef-4ee6-ad07-fd9b3b489395?action=share&source=collection_link&creator=28309338"
+	},
+	"item": [
+		{
+			"name": "USER: create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "aschauhan1052002@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "asc",
+							"type": "text"
+						},
+						{
+							"key": "fullName",
+							"value": "Abhijeet Chauhan",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{localhost}}/api/v1/user/create"
+			},
+			"response": []
+		},
+		{
+			"name": "USER: login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "aschauhan1052002@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "asc",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{localhost}}/api/v1/user/login"
+			},
+			"response": []
+		},
+		{
+			"name": "USER: get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{localhost}}/api/v1/user/get-all"
+			},
+			"response": []
+		},
+		{
+			"name": "USER: get profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{localhost}}/api/v1/user/profile"
+			},
+			"response": []
+		},
+		{
+			"name": "USER: get by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{localhost}}/api/v1/user/get/67af9409615d38de7ef96aa5"
+			},
+			"response": []
+		},
+		{
+			"name": "USER: update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullName",
+							"value": "Abhijeet",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{localhost}}/api/v1/user/update/67af9409615d38de7ef96aa5"
+			},
+			"response": []
+		},
+		{
+			"name": "USER: delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{localhost}}/api/v1/user/delete/67afac2d8bde571c5347cbb1"
+			},
+			"response": []
+		},
+		{
+			"name": "TASK: get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{localhost}}/api/v1/task/get-all"
+			},
+			"response": []
+		},
+		{
+			"name": "TASK: create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Test task 2",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "This is a test task second",
+							"type": "text"
+						},
+						{
+							"key": "priority",
+							"value": "low",
+							"type": "text"
+						},
+						{
+							"key": "due_date",
+							"value": "{{$isoTimestamp}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{localhost}}/api/v1/task/create"
+			},
+			"response": []
+		},
+		{
+			"name": "TASK: get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{localhost}}/api/v1/task/get-all"
+			},
+			"response": []
+		},
+		{
+			"name": "TASK: get by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{localhost}}/api/v1/task/get/67afb08fefa11353df34b813"
+			},
+			"response": []
+		},
+		{
+			"name": "TASK: update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Task second",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{localhost}}/api/v1/task/update/67afb1cfefa11353df34b81f"
+			},
+			"response": []
+		},
+		{
+			"name": "TASK: delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{localhost}}/api/v1/task/delete/67afb1cfefa11353df34b81f"
+			},
+			"response": []
+		}
+	]
+}
